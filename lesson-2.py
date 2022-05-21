@@ -41,4 +41,7 @@ text3 = """
 """
 
 res = re.findall(r"<\s*img\s+[^>]*?\s*src=[^>]+?>", text3)
+res2 = re.findall(r"<\s*img\s+.*?\s*src=[^>]+?>", text3)
 print(res)
+print(res == res2)
+# print(res2)
